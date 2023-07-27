@@ -1,7 +1,7 @@
-import pandas as pd
-
-df = pd.read_csv(r'C:\Users\pratz\homework3\python-challenge\PyBank\Resources\budgetdata.csv')
-
+import os
+budgetdata = os.path.join("Resources", "budgetdata.csv")
+with open(budgetdata) as csvfile:
+    print(csvfile)
 
 #number of months
 print('Number of Months:', len(df)-1)
